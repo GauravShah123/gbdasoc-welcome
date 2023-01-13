@@ -124,11 +124,18 @@ section{
 
 }
 
+@media screen and (min-width: 1000px) {
+    .card:last-of-type {
+        grid-column: 2/3;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .places {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 
 @media screen and (max-width: 800px) {
     section{
@@ -153,5 +160,6 @@ section{
 
     .places {
         grid-template-columns: 1fr;
+        padding: 2rem;
     }
 }
